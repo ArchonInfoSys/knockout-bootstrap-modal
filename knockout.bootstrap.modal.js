@@ -24,7 +24,7 @@ ko.bindingHandlers.modal = {
 			}
 		});
 
-		//hide elements inside modal unless we are showing it
+		// hide elements inside modal unless we are showing it
 		var _showAccessor = showAccessor.bind(optionsAccessor, optionsAccessor);
 		ko.bindingHandlers["if"].init(element, _showAccessor, allBindingsAccessor, viewModel, bindingContext);
 	},
